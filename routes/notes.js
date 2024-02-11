@@ -43,10 +43,44 @@ router.get('/:id', (req, res) => {
 
 
 
+// Create a new note 
+
+router.post('/', (req, res) => {
+
+    const newNoteData = {
+
+        // Generates a UUID string and take the first 4 characters using splice method as the new ID
+        id: uuid.v4().slice(0, 4),
+        
+        // Get the title property of the requested body
+        title: req.body.title,
+        
+        // Get the text property of the requested body 
+        text: req.body.text
+
+    }
+
+    if (newNoteData.title && newNoteData.text) {
+        // use Push method to add new entry to note object 
+        notes.push(newNoteData)
+
+        // Overwrite the existing file with the new data
+        fs.writeFile('./db/db.json', JSON.stringify(notes, null, ''), error => error ? console.error(error) : console.info('Data updated'));
+
+        // Send the updated notes as a JSON response 
+        res.json(notes);
+   
+    }else{
+
+        // If title or text properties are missing then send a 404 bad request response 
+        res.status(404).json({ msg: 'Hey bozo! Include title and text'});
+
+    }
+
+});
 
 
-
-
+// Delete an existing Note
 
 
 
