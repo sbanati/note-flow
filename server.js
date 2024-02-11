@@ -24,3 +24,19 @@ app.get('/notes', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/notes.html'));
 });
 
+// HHTP GET request to the root path when user visits main page
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/index.html'));
+});
+
+
+
+// Returns the index.html whenever anything else is called as a fallback
+// Catch-all using wildcard * to match any path 
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/index.hhtml'));
+});
+
+
+// Listen for PORT 
+app.listen(PORT, () => console.log(`http://localhost:${PORT}`));
