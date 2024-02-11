@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3000; // listen at port
 
 // Middleware for parsing JSON and urlencoded form data 
 app.use(express.json());
-app.use(express.urlendcoded( { extended: false} ));
+app.use(express.urlencoded( { extended: false} ));
 
 // Middleware to serve up static assets from the public folder
 app.use(express.static('public'));
@@ -34,7 +34,7 @@ app.get('/', (req, res) => {
 // Returns the index.html whenever anything else is called as a fallback
 // Catch-all using wildcard * to match any path 
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '/public/index.hhtml'));
+    res.sendFile(path.join(__dirname, '/public/index.html'));
 });
 
 
