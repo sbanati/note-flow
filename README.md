@@ -1,4 +1,5 @@
 
+\
 <a name="readme-top"></a>
 
 
@@ -8,18 +9,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  
+  <a href="https://github.com/sbanati/note-flow">  
+    <img src="public/assets/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
 <h1 align="center">Note|Flow</h1>
 
   <p align="center">
-    The only NOTE TAKER you will ever need. 
+    The only note taking application you will ever need. 
     <br />
     <a href="https://github.com/sbanati/note-flow"><strong>Explore the docs »</strong></a>
     <br />
     <br />
 
     
+  <a href="">View Demo</a>
+    
+  <img src="public/assets/screenshot.png" alt="note taking application">
 
   </p>
 </div>
@@ -55,9 +61,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This project is an express.js challenge where I was tasked with building a backend for a note-taking application.  
+This project is a Javascript challenge where I was tasked with building a weather dashboard that will run in the browser and contain dynamically updated HTML and CSS. It can be used to check weather daily, or for the week when thinking of longer term situations. 
 <br><br>
-I was provided with the front end and built the back end , connected the two and deployed the application to heroku
+I was told to use the openweather API to retrieve weather data. I was also tasked with utilizing localStorage features to store any persistent data. I was given freedom to use any Javascript solution to handle the functionality. The project was powered by dynamically updated HTML and CSS powered by jQuery
 
 
 
@@ -68,10 +74,14 @@ I was provided with the front end and built the back end , connected the two and
 
 ### Built With
 
+* [![Static Badge](https://img.shields.io/badge/HTML5-red?style=for-the-badge&logo=HTML5&labelColor=black)](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+* [![Static Badge](https://img.shields.io/badge/CSS3-black?style=for-the-badge&logo=CSS3&logoColor=blue&labelColor=black&color=blue)](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+* [![Static Badge](https://img.shields.io/badge/Java-gray?style=for-the-badge&logo=JavaScript&logoColor=yellow)](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+* ![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white)
+* ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 * [![Static Badge](https://img.shields.io/badge/Java-gray?style=for-the-badge&logo=JavaScript&logoColor=yellow)](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 * ![Static Badge](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 * ![Static Badge](https://img.shields.io/badge/Express.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
-
   
 
 
@@ -85,7 +95,7 @@ I was provided with the front end and built the back end , connected the two and
 ## Getting Started
 
  <h3>For end users</h3> 
-https://github.com/sbanati/README-Wizard  <br>
+https://sbanati.github.io/Adventure-Forecast/  <br>
 
 
 
@@ -95,7 +105,7 @@ For anyone wanting to contribute <br>
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/sbanati/README-Wizard
+   git clone https://github.com/sbanati/Adventure-Forecast.git
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -105,10 +115,10 @@ For anyone wanting to contribute <br>
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-<h3>Video of the README Wizard.</h3>
+<h3>gif of the Adventure-Forecast running. You can see the user testing the save functionality.</h3>
 
-https://youtu.be/BvpyViD6ejs
 
+![notetakergif](https://github.com/sbanati/note-flow/assets/149754544/e3efb8fd-ceef-43bd-9f17-b82eae66ffa6)
 
 
 
@@ -125,9 +135,9 @@ https://youtu.be/BvpyViD6ejs
 
 <h3>Possible features</h3>
 
-* Adding icons for the tech stack display
-* Adding a screenshot section 
-
+* Adding functionality to clear the history with a clear button
+* Adding a light and dark Mode. 
+* Adding more weather forecast coverage via cards 
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -155,8 +165,7 @@ If you have a suggestion that would make this better, please fork the repo and c
 
 <!-- ACKNOWLEDGEMENT -->
 ## Acknowledgement
-* TA Sachin
-  
+* Practiced pair programming with Salvatore.
 
 
 
@@ -168,9 +177,9 @@ If you have a suggestion that would make this better, please fork the repo and c
 <!-- CONTACT -->
 ## Contact
 
-Twitter and email - [@twitter_TherealSLVR](https://twitter.com/TherealSLVR) - smbanati@gmail.com
+Your Name - [@twitter_TherealSLVR](https://twitter.com/TherealSLVR) - smbanati@gmail.com
 
-Project Link: https://github.com/sbanati/README-Wizard
+Project Link: https://github.com/sbanati/Adventure-Forecast
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -181,6 +190,8 @@ Project Link: https://github.com/sbanati/README-Wizard
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 References:
 * https://dev.to/envoy_/150-badges-for-github-pnk#skills (for badges)
+* https://www.flaticon.com/free-icon/weather-app_4052984 (for logo)
 * https://github.com/othneildrew/Best-README-Template (best readme template, given to me by the Grader from challenge 1!😊)
+* https://github.com/sbanati/CodeQuizPro (used my previous project to remember the localStorage functionality)
 * Used the Expert Learning Assistant when I was stuck
 * My TA Sachin helped me talk through the workflow of the project 
