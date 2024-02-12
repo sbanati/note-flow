@@ -23,7 +23,7 @@
     <br />
 
     
-  <a href="">View Demo</a>
+  <a href="https://desolate-plains-80935-4c44f426e8bf.herokuapp.com/">View Demo</a>
     
   <img src="public/assets/screenshot.png" alt="note taking application">
 
@@ -94,7 +94,7 @@ I was given the front end and was told to create the backend and connect the two
 ## Getting Started
 
  <h3>For end users</h3> 
-https://sbanati.github.io/Adventure-Forecast/  <br>
+https://desolate-plains-80935-4c44f426e8bf.herokuapp.com/  <br>
 
 
 
