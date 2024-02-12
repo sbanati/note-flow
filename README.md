@@ -13,9 +13,9 @@
 <h1 align="center">Note|Flow</h1>
 
   <p align="center">
-    The only NOTE TAKER you will ever need for any and all of your projects. 
+    The only NOTE TAKER you will ever need. 
     <br />
-    <a href="https://github.com/sbanati/README-Wizard"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/sbanati/note-flow"><strong>Explore the docs »</strong></a>
     <br />
     <br />
 
@@ -55,9 +55,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This project is a node.js challenge where I was tasked with building a command-line application to generate a readme file.  
+This project is an express.js challenge where I was tasked with building a backend for a note-taking application.  
 <br><br>
-I was told that the command-line application must dynamically create a README based on inputs from the user by using the inquirer package. 
+I was provided with the front end and built the back end , connected the two and deployed the application to heroku
 
 
 
@@ -70,6 +70,7 @@ I was told that the command-line application must dynamically create a README ba
 
 * [![Static Badge](https://img.shields.io/badge/Java-gray?style=for-the-badge&logo=JavaScript&logoColor=yellow)](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 * ![Static Badge](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+* ![Static Badge](https://img.shields.io/badge/Express.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 
   
 
