@@ -79,7 +79,6 @@ I was told to use the openweather API to retrieve weather data. I was also taske
 * [![Static Badge](https://img.shields.io/badge/Java-gray?style=for-the-badge&logo=JavaScript&logoColor=yellow)](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 * ![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white)
 * ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
-* [![Static Badge](https://img.shields.io/badge/Java-gray?style=for-the-badge&logo=JavaScript&logoColor=yellow)](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 * ![Static Badge](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 * ![Static Badge](https://img.shields.io/badge/Express.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
   
@@ -105,7 +104,7 @@ For anyone wanting to contribute <br>
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/sbanati/Adventure-Forecast.git
+   git clone https://github.com/sbanati/note-flow.git
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -134,10 +133,7 @@ For anyone wanting to contribute <br>
 ## Additions
 
 <h3>Possible features</h3>
-
-* Adding functionality to clear the history with a clear button
-* Adding a light and dark Mode. 
-* Adding more weather forecast coverage via cards 
+ 
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -165,7 +161,7 @@ If you have a suggestion that would make this better, please fork the repo and c
 
 <!-- ACKNOWLEDGEMENT -->
 ## Acknowledgement
-* Practiced pair programming with Salvatore.
+* Practiced pair programming with Arkaw.
 
 
 
@@ -177,9 +173,9 @@ If you have a suggestion that would make this better, please fork the repo and c
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_TherealSLVR](https://twitter.com/TherealSLVR) - smbanati@gmail.com
+Twitter and Email - [@twitter_TherealSLVR](https://twitter.com/TherealSLVR) - smbanati@gmail.com
 
-Project Link: https://github.com/sbanati/Adventure-Forecast
+Project Link: https://github.com/sbanati/note-flow
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -192,6 +188,5 @@ References:
 * https://dev.to/envoy_/150-badges-for-github-pnk#skills (for badges)
 * https://www.flaticon.com/free-icon/weather-app_4052984 (for logo)
 * https://github.com/othneildrew/Best-README-Template (best readme template, given to me by the Grader from challenge 1!😊)
-* https://github.com/sbanati/CodeQuizPro (used my previous project to remember the localStorage functionality)
 * Used the Expert Learning Assistant when I was stuck
-* My TA Sachin helped me talk through the workflow of the project 
+* My TA Sachin helped me with the setting up my routes 
