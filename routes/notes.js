@@ -6,7 +6,7 @@ const uuid = require('uuid');
 
 
 // Load existing notes from db.JSON file
-
+// Will be let b/c notes will be updated with new entries 
 let notes = require('../db/db.json');
 
 
@@ -22,7 +22,6 @@ router.get('/', (req, res) => {
 
 
 // GET single note from db.JSON based on unique id
-
 router.get('/:id', (req, res) => {
 
      // Check if there is a note that matches specific id
@@ -32,11 +31,11 @@ router.get('/:id', (req, res) => {
     if (foundNoteData) {
         
         // Respond with JSON with the filtered notes array for the ntoes that match specific id
-        res.json(notes.filter(note => note.id === req.params.id));
+        res.json(notes.filter(note => note.id === req.params.id))
     
     }else{
         // If no matching note is found, respond with a 404 Bad Request status and an error message
-        res.status(404).json({ msg: `$req.params.id} not found bozo`})
+        res.status(404).json({ msg: `${req.params.id} not found you bozo`})
     }
 
 });
@@ -44,7 +43,6 @@ router.get('/:id', (req, res) => {
 
 
 // Create a new note 
-
 router.post('/', (req, res) => {
 
     const newNoteData = {
@@ -60,12 +58,24 @@ router.post('/', (req, res) => {
 
     }
 
+    // Check if both title and text properties exist and are truthy in new note data
     if (newNoteData.title && newNoteData.text) {
         // use Push method to add new entry to note object 
         notes.push(newNoteData)
 
         // Overwrite the existing file with the new data
-        fs.writeFile('./db/db.json', JSON.stringify(notes, null, ''), error => error ? console.error(error) : console.info('Data updated'));
+        fs.writeFile('./db/db.json', JSON.stringify(notes, null, ''), (error) => {
+            
+            if (error) {
+                
+                console.error(error);
+            
+            } else {
+               
+                console.info('Data updated');
+            }
+        });
+        
 
         // Send the updated notes as a JSON response 
         res.json(notes);
@@ -81,9 +91,37 @@ router.post('/', (req, res) => {
 
 
 // Delete an existing Note
+router.delete('/:id', (req, res) => {
+    
+    // checks to see if a note with the specified id exists
+    const foundNoteData = notes.some(note => note.id === req.params.id);
 
+    if (foundNoteData) {
+        
+        // Filters out the note with the searched id from the notes array 
+        notes = notes.filter(note => note.id !== req.params.id);
 
+        //
+        fs.writeFile("./db/db.json", JSON.stringify(notes, null, ''), (error) => {
 
+            if (error) {
+                console.error(error)
+
+            }
+                
+            console.info('notes deleted successfully!')
+
+            })
+
+        // Send the updated notes as a JSON response 
+        res.status(200).json(notes);
+        }else{
+           
+           // sends error response 
+            res.status(404).json(" note not found bozo ")
+        }
+
+    });
 
 
 
