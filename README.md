@@ -61,9 +61,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This project is a Javascript challenge where I was tasked with building a weather dashboard that will run in the browser and contain dynamically updated HTML and CSS. It can be used to check weather daily, or for the week when thinking of longer term situations. 
+This project was an express.js challenge where I was tasked with building the backend for a note-taker application that will save and retrieve note data from a JSON file 
 <br><br>
-I was told to use the openweather API to retrieve weather data. I was also tasked with utilizing localStorage features to store any persistent data. I was given freedom to use any Javascript solution to handle the functionality. The project was powered by dynamically updated HTML and CSS powered by jQuery
+I was given the front end and was told to create the backend and connect the two and then deploy the application via Heroku. 
 
 
 
